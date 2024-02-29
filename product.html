@@ -1,0 +1,1642 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Z.P | PRODUCTS</title>
+    <link rel="icon" href="images/logo arabic.ico" type=" image/ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-three.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <section class="container navbar-sec d-none d-lg-none d-xl-block">
+        <div class="navbar bg-white fixed-top">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="logo img-fluid" src="images/logo.png" alt="logo"></a>
+                    <ul class="navbar-nav me-auto mb-2 mx-auto mb-lg-0">
+                        <a class="nav-link mx-2" href="index.html" onclick="highlightTab(this)">Home</a>
+                        <a class="nav-link  mx-2" href="about-us.html" onclick="highlightTab(this)">About
+                            Us</a>
+                        <a class="nav-link  mx-2" href="product.html" onclick="highlightTab(this)">Products</a>
+                        <a class="nav-link  mx-2" href="contact.html" onclick="highlightTab(this)">Contact
+                            Us</a>
+                    </ul>
+                    <span class="nav-item ">
+                        <a class="nav-link arabic-welcome-sec mx-0 text-end" href="#"> <span
+                                class="arabic arabic-welcome text-center">
+                                مرحبا بكم في زيارات للعطور</span>
+                            <img src="images/arabic logo.png" class="arabic-logo" alt="arabic-logo"> </a>
+                    </span>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- <section class="mob-nav"> -->
+    <nav class="navbar-bottom" id="bottomNavbar">
+        <li class="nav-item home" onclick="toggleActive(this, 'home')">
+            <a class="nav-link" href="index.html">
+                <i class="fas fa-home nav-icon"></i>
+                <div>HOME</div>
+            </a>
+        </li>
+        <li class="nav-item search" onclick="toggleActive(this, 'search')">
+            <a class="nav-link" href="about-us.html">
+                <i class="far fa-user nav-icon"></i>
+                <div>ABOUT</div>
+            </a>
+        </li>
+        <li class="nav-item notifications" onclick="toggleActive(this, 'notifications')">
+            <a class="nav-link" href="product.html">
+                <i class="fa-solid fa-shop nav-icon"></i>
+                <div>PRODUCTS</div>
+            </a>
+        </li>
+        <li class="nav-item profile" onclick="toggleActive(this, 'profile')">
+            <a class="nav-link" href="contact.html">
+                <i class="far fa-address-book nav-icon"></i>
+                <div>CONTACT</div>
+            </a>
+        </li>
+    </nav>
+    </section>
+
+    <section class="logo-mob fixed-top bg-white">
+        <div class="d-flex justify-content-between">
+            <a class="navbar-brand" href="#"><img class="logo img-fluid mt-3" src="images/logo.png" alt="logo"></a>
+            <p class="text-center text-arabic-welcome mt-3">
+                مرحبا بكم في زيارات للعطور</p>
+            <a class="nav-link  mx-0 text-end " href="#">
+                <img src="images/arabic logo.png" class="arabic-logo mt-3" alt="arabic-logo">
+            </a>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-4" data-aos="fade-up-left">
+                <div class="categories bg-none">
+                    <h1 class="title-cat">CATEGORIES</h1>
+                    <ul class="catog-list">
+                        <li href="#" onclick="filterProducts('perfumes')">PERFUMES</a></li>
+                        <li href="#" onclick="filterProducts('ouds')">OUD'S</a></li>
+                        <li href="#" class="dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#attarsSubMenu"
+                            aria-expanded="false" onclick="filterProducts('attars')">ATTAR'S</li>
+                        <ul class="list-group collapse" id="attarsSubMenu">
+                            <li class="list-group-item" onclick="filterProducts('attars','8ml')">
+                                8 ML</li>
+                            <li class="list-group-item" onclick="filterProducts('attars', '20ml')">20 ML
+                            </li>
+                            <li class="list-group-item" onclick="filterProducts('attars', '100mlp')">100 ML PREMIUM
+                            </li>
+                            <li class="list-group-item" onclick="filterProducts('attars', '500gms')">500 ML
+                            </li>
+
+                            <!-- Add more subcategories as needed -->
+                        </ul>
+
+                        <li href=" #" onclick="filterProducts('bakhors')">BAKHOOR'S</a></li>
+                    </ul>
+                </div>
+                <div class="filter">
+                    <h1 class="title-filter">FILTER BY</h1>
+                    <form onsubmit="applyFilters(); return false;">
+                        <div class="d-flex align-items-center">
+                            <input type="number" class="form-control mx-2" id="minPrice" placeholder="Min Price">
+                            -
+                            <input type="number" class="form-control mx-2" id="maxPrice" placeholder="Max Price">
+                        </div>
+                        <div class="d-flex justify-content-end mt-3">
+                            <button type="submit" class="btn btn-primary mx-2">Apply</button>
+                            <button type="button" class="btn btn-secondary" onclick="resetFilters()">Reset</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row" id="productGrid"></div>
+                <div class="pagination justify-content-between my-3">
+                    <button class="btn btn-secondary" onclick="previousPage()"><i class="fa fa-caret-left"
+                            aria-hidden="true"></i></button>
+                    <span id="currentPage" class="border rounded-4 border-info  p-2 mb-2"></span>
+                    <button class="btn btn-secondary" onclick="nextPage()"><i class="fa fa-caret-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-black text-white">
+        <div class="container">
+            <div class="row g-0 ">
+                <div class="col-md-4">
+                    <h5>Get in touch with us:</h5>
+                    <a href="https://www.instagram.com/ziarat_for_oud/?hl=en" class="text-white mx-1"><i
+                            class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="https://api.whatsapp.com/send?phone=919619000488&msg=hi" class="text-white mx-1"><i
+                            class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://www.youtube.com/@ziaratperfumer2482" class="text-white mx-1"><i
+                            class="fa-brands fa-youtube"></i> YouTube</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links:</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="index.html">Home</a></li>
+                        <li><a class="text-white" href="about-us.html">About Us</a></li>
+                        <li><a class="text-white" href="product.html">Our Products</a></li>
+                        <li><a class="text-white" href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4">
+                    <h5>Search:</h5>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2023 ZIARAT PERFUMES. All rights reserved. <br> Powered by <a
+                        href="https://webwonder.netlify.app/" class="text-warning text-bold" target="_blank">WEB
+                        WONDERS</a></p>
+                <p>"Unlock the magic of your online presence with Web Wonders! Contact us today for exceptional website
+                    creation that goes beyond expectations. Let us help your business thrive. <br> Call us now at
+                    [7977027359] for more information."</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Fill The Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-floating mb-3">
+                                <input type="hidden" id="productName" class="" value="">
+
+                                <input type="name" class="form-control" id="floatingInput" placeholder="name">
+                                <label for="floatingInput">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Address" id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInputemail"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="mobilenumber" placeholder="1234567890">
+                                <label for="floatingInput">Mobile Number:</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInputqty"
+                                    placeholder="1234567890">
+                                <label for="floatingInput">Qty:</label>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>SELECT PAYMENT METHOD</option>
+                                <option value="1">CASH ON DELIVERY</option>
+                                <option value="2" disabled>ONLINE PAYMENT</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        onclick="buyProduct(document.getElementById('productName').value)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        function filterProducts(category, subCategory) {
+            if (subCategory) {
+                filteredProducts = products.filter(product =>
+                    product.category === category && product.subCategory === subCategory
+                );
+            } else {
+                filteredProducts = products.filter(product => product.category === category);
+            }
+            currentPage = 1;
+            generateProductGrid();
+        }
+    </script>
+
+
+
+    <script>
+        const products = [
+            {
+                image: "images/perfumes/amir-100ml.jpg",
+                title: "AMIR 100 ML",
+                arabic: "أمير",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                arabicdes: "عطر النغمة العربية",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/oudal-amber-100ml.jpg",
+                title: "OUD AL AMBER 100 ML",
+                arabic: "عود العنبر",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                arabicdes: "عطر النغمة العربية",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/oud-kasr-100ml.jpg",
+                title: "OUD AL QASR 100 ML",
+                arabic: "عود القصر",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                arabicdes: "عطر النغمة العربية",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/shaikha-khususi-100ml.jpg",
+                title: "SHAIKHA KHUSUSI 100 ML",
+                arabic: "شيخة خصوصي",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                arabicdes: "عطر النغمة العربية",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/d.oud-barkah-khususi-100ml.jpg",
+                title: "DEHNAL OUD BARKHA KHUSUSI 100 ML",
+                arabic: "دهنالود برخا خصوصي",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                arabicdes: "عطر النغمة العربية",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/emarat-khususi-100ml.jpg",
+                title: "EMARAT KHUSUSI 100 ML",
+                arabic: "إمارات خاصسي",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                arabicdes: "عطر النغمة العربية",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/princess-oud-100ml.jpg",
+                title: "OUD FOR PRINCESS 100 ML",
+                arabic: "الأميرة للعود",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                arabicdes: "عطر النغمة العربية",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/ziana-100ml.jpg",
+                title: "ZAINA 100 ML",
+                arabic: "زينة",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                arabicdes: "عطر النغمة العربية",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/oud-rayyan-100ml.jpg",
+                title: "OUD AL RAYYAN 100 ML",
+                arabic: "زينة",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                arabicdes: "عود الريان",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/oud-saba-100ml.jpg",
+                title: "MALIKAT SABA",
+                arabic: "دهنال عود ملكات صبا",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                arabicdes: "عود الريان",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/d,oud-salamat-100ml.jpg",
+                title: "D. OUD SALAMAH 100 ML",
+                arabic: "دهنل عود سلامة",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/khalifa-100ml.jpg",
+                title: "KHALIFA 100 ML",
+                arabic: "خليفة",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/lailatul-ziarat-100ml.jpg",
+                title: "LAILATUL ZIARAT 100 ML",
+                arabic: "ليلة الزيارة",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/misk-rizali-100ml.jpg",
+                title: "MISK RAZALI 100 ML",
+                arabic: "مسك رزالي",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/oud-azrak-100ml.jpg",
+                title: "OUD AZRAK 100 ML",
+                arabic: "عود أزرق",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/oud-kalakasi-100ml.jpg",
+                title: "OUD KALAKASI 100 ML",
+                arabic: "عود كالكاسي",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/shaikat-100ml.jpg",
+                title: "SHAIKAT 100 ML",
+                arabic: "شيخة",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/zafran-khususi-100ml.jpg",
+                title: "ZAFRAN KHUSUSI 100 ML",
+                arabic: "زفران خصوصي",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/amiraloud.jpeg",
+                title: "AMIR AL OUD 100 ML",
+                arabic: "امير العود",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 1500,
+                arabicprice: 'روبية هندية : -/١٥٠٠'
+            },
+            {
+                image: "images/perfumes/arabianrose.jpeg",
+                title: "ARABIAN ROSE 100 ML",
+                arabic: "روس عربي",
+                description: "ARABIAN TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/perfumes/beautiful.jpeg",
+                title: "BEAUTIFUL 100 ML",
+                arabic: "بيؤتيفول",
+                description: "FRENCH TONE PERFUME",
+                arabicdes: "عطر النغمة العربية",
+                category: "perfumes",
+                price: 1500,
+                arabicprice: 'روبية هندية : -/١٥٠٠'
+            },
+            {
+                image: "images/perfumes/bluesauvage.jpeg",
+                title: "BLUE SAUVAGE 100 ML",
+                arabic: "بلو سوج",
+                description: "FRENCH TONE PERFUME",
+                category: "perfumes",
+                price: 1500,
+                arabicprice: 'روبية هندية : -/١٥٠٠'
+            },
+            {
+                image: "images/perfumes/dehnaloud.jpeg",
+                title: "DEHNL OUD 100 ML",
+                arabic: "دهنل عود",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                price: 2000,
+                arabicprice: 'روبية هندية : -/٢٠٠٠'
+            },
+            {
+                image: "images/perfumes/hiness.jpeg",
+                title: "HINESS 100 ML",
+                arabic: "هاينز",
+                description: "FRENCH TONE PERFUME",
+                category: "perfumes",
+                price: 1800,
+                arabicprice: 'روبية هندية : -/١٨٠٠'
+            },
+            {
+                image: "images/perfumes/karbonn.jpeg",
+                title: "KARBONN 100 ML",
+                arabic: "كاربون",
+                description: "FRENCH TONE PERFUME",
+                category: "perfumes",
+                price: 1200,
+                arabicprice: 'روبية هندية : -/١٢٠٠'
+            },
+            {
+                image: "images/perfumes/majestic.jpeg",
+                title: "MAJESTIC 100 ML",
+                arabic: "مجستيق",
+                description: "FRENCH TONE",
+                category: "perfumes",
+                price: 1800,
+                arabicprice: 'روبية هندية : -/١٨٠٠'
+            },
+            {
+                image: "images/perfumes/mukhallat.jpeg",
+                title: "MUKHALLAT I 100 ML",
+                arabic: "مخلط أنا",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                price: 1800,
+                arabicprice: 'روبية هندية : -/١٨٠٠'
+            },
+            {
+                image: "images/perfumes/mukahllat2.jpeg",
+                title: "MUKHALLAT II 100 ML",
+                arabic: "مخلط الثاني",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                price: 1800,
+                arabicprice: 'روبية هندية : -/١٨٠٠'
+            },
+            {
+                image: "images/perfumes/oudkadeem.jpeg",
+                title: "OUD KADEEM 100 ML",
+                arabic: "عود القديم",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes",
+                price: 2500,
+                arabicprice: 'روبية هندية : -/٢٥٠٠'
+            },
+            {
+                image: "images/perfumes/oudsaffron.jpeg",
+                title: "OUD SAFFRON 100 ML",
+                arabic: "عود زعفران",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes ",
+                price: 1500,
+                arabicprice: 'روبية هندية : -/١٥٠٠'
+            },
+            {
+                image: "images/perfumes/saudioud.jpeg",
+                title: "SAUDI OUD 100 ML",
+                arabic: "عود سعودي",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes ",
+                price: 1800,
+                arabicprice: 'روبية هندية : -/١٨٠٠'
+            },
+            {
+                image: "images/perfumes/shaikhoud.jpeg",
+                title: "SHAIKH AL OUD 100 ML",
+                arabic: "شيخ العود",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes ",
+                price: 2000,
+                arabicprice: 'روبية هندية : -/٢٠٠٠'
+            },
+            {
+                image: "images/perfumes/sweet.jpeg",
+                title: "SWEET",
+                arabic: "سويط",
+                description: "FRENCH TONE PERFUME",
+                category: "perfumes ",
+                price: 1200,
+                arabicprice: 'روبية هندية : -/١٢٠٠'
+            },
+            {
+                image: "images/perfumes/wildwest.jpeg",
+                title: "WIDWEST",
+                arabic: "وايد ويسط",
+                description: "FRENCH TONE PERFUME",
+                category: "perfumes ",
+                price: 1200,
+                arabicprice: 'روبية هندية : -/١٢٠٠'
+            },
+            {
+                image: "images/perfumes/zaina.jpeg",
+                title: "ZAINA 50 ML",
+                arabic: "زينة",
+                description: "ARABIAN TONE PERFUME",
+                category: "perfumes ",
+                price: 1800,
+                arabicprice: 'روبية هندية : -/١٨٠٠'
+            },
+            {
+                image: "images/perfumes/ziaratblue.jpeg",
+                title: "ZIARAT BLUE 100 ML",
+                arabic: "زيارات بلو",
+                description: "FRENCH TONE PERFUME",
+                category: "perfumes ",
+                price: 1500,
+                arabicprice: 'روبية هندية : -/١٥٠٠'
+            },
+            {
+                image: "images/perfumes/ziaratnight.jpeg",
+                title: "ZIARAT NIGHT 100 ML",
+                arabic: "زيارت نايك",
+                description: "FRENCH TONE PERFUME",
+                category: "perfumes",
+                price: 1500,
+                arabicprice: 'روبية هندية : -/١٥٠٠'
+            },
+            {
+                image: "images/bakhoors/bakhoor al kaaba.jpeg",
+                title: "BAKHOOR AL KAABA",
+                arabic: "بخور الكعبة",
+                description: "WEIGHT : 30 GMS",
+                arabicdes: "وزن : ٣٠ جرامات ",
+                category: "bakhors",
+                price: 450,
+                arabicprice: 'روبية هندية : -/٤٥٠'
+            },
+            {
+                image: "images/bakhoors/bakhoor al rayyan.jpeg",
+                title: "BAKHOOR OUD AL RAYYAN",
+                arabic: "بخور عود الريان",
+                description: "WEIGHT : 50 GMS",
+                arabicdes: "وزن : ٥٠ جرامات ",
+                category: "bakhors",
+                price: 1000,
+                arabicprice: 'روبية هندية : -/١٠٠٠'
+            },
+            {
+                image: "images/bakhoors/bakhoor al rehman.jpeg",
+                title: "BAKHOOR OUD AL rehman",
+                arabic: "بخور عود الرحمن",
+                description: "WEIGHT : 50 GMS",
+                arabicdes: "وزن : ٥٠ جرامات ",
+                category: "bakhors",
+                price: 1000,
+                arabicprice: 'روبية هندية : -/١٠٠٠'
+            },
+            {
+                image: "images/bakhoors/bakhoor arabian night.jpeg",
+                title: "BAKHOOR ARABIAN NIGHTS",
+                arabic: "بخور عربي نايتس",
+                description: "WEIGHT : 30 GMS",
+                arabicdes: "وزن : ٣٠ جرامات ",
+                category: "bakhors",
+                price: 450,
+                arabicprice: 'روبية هندية : -/٤٥٠'
+            },
+            {
+                image: "images/bakhoors/bakhoor dirham.jpeg",
+                title: "BAKHOOR DIRHAM",
+                arabic: "بخور درهم",
+                description: "WEIGHT : 30 GMS",
+                arabicdes: "وزن : ٣٠ جرامات ",
+                category: "bakhors",
+                price: 450,
+                arabicprice: 'روبية هندية : -/٤٥٠'
+            },
+            {
+                image: "images/bakhoors/bakhoor oud rose.jpeg",
+                title: "BAKHOOR OUD AND ROSE",
+                arabic: "بخور العود والروس",
+                description: "WEIGHT : 30 GMS",
+                arabicdes: "وزن : ٣٠ جرامات ",
+                category: "bakhors",
+                price: 450,
+                arabicprice: 'روبية هندية : -/٤٥٠'
+            },
+            {
+                image: "images/bakhoors/bakhoor rizali.jpeg",
+                title: "BAKHOOR RIZALI",
+                arabic: "بخور رزالي",
+                description: "WEIGHT : 30 GMS",
+                arabicdes: "وزن : ٣٠ جرامات ",
+                category: "bakhors",
+                price: 500,
+                arabicprice: 'روبية هندية : -/٥٠٠'
+            },
+            {
+                image: "images/bakhoors/bakhoor saatsafa.jpeg",
+                title: "BAKHOOR SAATSAFA",
+                arabic: "بخور ساتسافا",
+                description: "WEIGHT : 30 GMS",
+                arabicdes: "وزن : ٣٠ جرامات ",
+                category: "bakhors",
+                price: 500,
+                arabicprice: 'روبية هندية : -/٥٠٠'
+            },
+            {
+                image: "images/bakhoors/bakhoor bilal.jpeg",
+                title: "BAKHOOR BILAL",
+                arabic: "بخور بلال",
+                description: "WEIGHT : 30 GMS",
+                arabicdes: "وزن : ٣٠ جرامات ",
+                category: "bakhors",
+                price: 500,
+                arabicprice: 'روبية هندية : -/٥٠٠'
+            },
+            {
+                image: "images/8ml/aashiq al oud 8 ml.jpeg",
+                title: "ASHIQ AL OUD",
+                arabic: "عاشق العود",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/al khanzar 8 ml.jpeg",
+                title: "AL KHANZAR",
+                arabic: "الخنزر",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/alfeen 8 ml.jpeg",
+                title: "ALFEEN",
+                arabic: "ألفين",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/aseel 8 ml.jpeg",
+                title: "ASEEL",
+                arabic: "أصيل",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/asma 8 ml.jpeg",
+                title: "ASMA",
+                arabic: "أسماء",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/attarfull 8 ml.jpeg",
+                title: "ATTARFULL",
+                arabic: "أتارفول",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/black oud 8 ml.jpeg",
+                title: "BLACK OUD",
+                arabic: "بلاك عود",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/blue lady 8 ml.jpeg",
+                title: "BLUE LADY",
+                arabic: "بلو ليدي",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/body musk 8 ml.jpeg",
+                title: "BODY MUSK",
+                arabic: "بودي المسك",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/burj al arab 8 ml.jpeg",
+                title: "BURJ AL ARAB",
+                arabic: "برج العرب",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/choco musk 8 ml.jpeg",
+                title: "CHOCO MUSK",
+                arabic: "شوكو مسك",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/dubai gold 8 ml.jpeg",
+                title: "DUBAI GOLD",
+                arabic: "دوبي غولد",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/fantasia 8 ml.jpeg",
+                title: "FANTASIA",
+                arabic: "فانتازيا",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/ice berg 8 ml.jpeg",
+                title: "ICE BERG",
+                arabic: "ايسي بيرج",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/j. firdaus 8 ml.jpeg",
+                title: "JANNATUL FIRDAUS",
+                arabic: "جنة الفردوس",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/kasturi 8 ml.jpeg",
+                title: "KASTURI",
+                arabic: "كاستوري",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/m.bilal 8 ml.jpeg",
+                title: "MUKHALLAT BILAL",
+                arabic: "مخلط بلال",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/magnet 8 ml.jpeg",
+                title: "MAGNET",
+                arabic: "مغناطيس",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/majmua 8 ml.jpeg",
+                title: "MAJMUA",
+                arabic: "مجموعة",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/misk razali 8 ml.jpeg",
+                title: "MISK RIZALI",
+                arabic: "مسك رزالي",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/oud zsp 8 ml.jpeg",
+                title: "OUD ZSP",
+                arabic: "العود",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/pboy newyork 8 ml.jpeg",
+                title: "PLAYBOY NEWYORK",
+                arabic: "بلاي بوي نيويورك",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/playboy london 8 ml.jpeg",
+                title: "PLAYBOY LONDON",
+                arabic: "بلاي بوي لندن",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/red rose 8 ml.jpeg",
+                title: "RED ROSE",
+                arabic: "ريد روس",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/royal prophecy 8 ml.jpeg",
+                title: "ROYAL PROPHECY",
+                arabic: "رويال بروفيسي",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/ruh gulab 8 ml.jpeg",
+                title: "RUH GULAB",
+                arabic: "روه جولاب",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/sabaya 8 ml.jpeg",
+                title: "SABAYA",
+                arabic: "صبايا",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/shahzeen 8 ml.jpeg",
+                title: "SHAHZEEN",
+                arabic: "شاهزين",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/sports 8 ml.jpeg",
+                title: "SPORTS",
+                arabic: "سبورتس",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/sultan 8 ml.jpeg",
+                title: "SULTAN",
+                arabic: "سلطان",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/swiss 8 ml.jpeg",
+                title: "SWISS ZIARAT",
+                arabic: "سويز زيارات",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/white oud 8 ml.jpeg",
+                title: "WHITE OUD",
+                arabic: "عود الأبيض",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/x s s 8 ml.jpeg",
+                title: "X S S",
+                arabic: "س س س",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/z x 8 ml.jpeg",
+                title: "Z X",
+                arabic: "ز اكس",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/8ml/zam zam 8 ml.jpeg",
+                title: "ZAM ZAM",
+                arabic: "زمزم",
+                description: "ATTAR ROLL ON 8 ML",
+                arabicdes: "عطر رول ٨ مل",
+                category: "attars",
+                subCategory: "8ml",
+                price: 100,
+                arabicprice: 'روبية هندية : -/١٠٠'
+            },
+            {
+                image: "images/20ml/arabia code.jpeg",
+                title: "ARABIA CODE",
+                arabic: "كود العربية",
+                description: "ATTAR ROLL ON 20 ML",
+                arabicdes: "عطر رول ٢٠ مل",
+                category: "attars",
+                subCategory: "20ml",  // This property represents the subcategory
+                price: 250,
+                arabicprice: 'روبية هندية : -/٢٥٠'
+            },
+            {
+                image: "images/20ml/black intense.jpeg",
+                title: "BLACK INTENSE",
+                arabic: "بلك إنطينس",
+                description: "ATTAR ROLL ON 20 ML",
+                arabicdes: "عطر رول ٢٠ مل",
+                category: "attars",
+                subCategory: "20ml",  // This property represents the subcategory
+                price: 250,
+                arabicprice: 'روبية هندية : -/٢٥٠'
+            },
+            {
+                image: "images/20ml/iconic oudh.jpeg",
+                title: "ICONIC OUDH",
+                arabic: "عود أيكونيك",
+                description: "ATTAR ROLL ON 20 ML",
+                arabicdes: "عطر رول ٢٠ مل",
+                category: "attars",
+                subCategory: "20ml",  // This property represents the subcategory
+                price: 250,
+                arabicprice: 'روبية هندية : -/٢٥٠'
+            },
+            {
+                image: "images/20ml/raees.jpg",
+                title: "RAEES",
+                arabic: "رئيس",
+                description: "ATTAR ROLL ON 20 ML",
+                arabicdes: "عطر رول ٢٠ مل",
+                category: "attars",
+                subCategory: "20ml",  // This property represents the subcategory
+                price: 250,
+                arabicprice: 'روبية هندية : -/٢٥٠'
+            },
+            {
+                image: "images/100mlp/amir al oud p 100ml.jpeg",
+                title: "AMIR AL OUD",
+                arabic: "امير العود",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/BAKARAGE 100 ML.jpeg",
+                title: "BACARTE ROUGE",
+                arabic: "باكارات روج",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/black oud p 100ml.jpeg",
+                title: "BLACK OUD",
+                arabic: "بلاك عود",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 1000,
+                arabicprice: 'روبية هندية : -/١٠٠٠'
+            },
+            {
+                image: "images/100mlp/bushra p 100ml.jpeg",
+                title: "BUSHRA",
+                arabic: "بشرى",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/hogo boss p 100ml.jpeg",
+                title: "HOGO BOSS",
+                arabic: "هوغو بوس",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/honey oud p 100ml.jpeg",
+                title: "HONEY OUD",
+                arabic: "هوني عود",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/honey oud p 100ml.jpeg",
+                title: "JADOR",
+                arabic: "جادور",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/king p 100ml.jpeg",
+                title: "KING",
+                arabic: "كينغ",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 1000,
+                arabicprice: 'روبية هندية : -/١٠٠٠'
+            },
+            {
+                image: "images/100mlp/ks p 100ml.jpeg",
+                title: "K S",
+                arabic: "ك س",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/labbaik 100 ml.jpeg",
+                title: "LABBAIK",
+                arabic: "لبيك",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 500,
+                arabicprice: 'روبية هندية : -/٥٠٠'
+            },
+            {
+                image: "images/100mlp/lovely p 100ml.jpeg",
+                title: "LOVELY",
+                arabic: "لوفلي",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/m.bilal p 100ml.jpeg",
+                title: "MUKHALLAT BILAL",
+                arabic: "مخلط بلال",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/m.nabeel p 100ml.jpeg",
+                title: "MUKHALLAT NABEEL",
+                arabic: "مخلط نبيل",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/madinah p 100ml.jpeg",
+                title: "MADINAH",
+                arabic: "مديناح",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/milky oud 100 ml.jpeg",
+                title: "MILKY OUD",
+                arabic: "عود حليبي",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 1200,
+                arabicprice: 'روبية هندية : -/١٢٠٠'
+            },
+            {
+                image: "images/100mlp/musK al tahara p 100ml.jpeg",
+                title: "MUSK AL TAHARA",
+                arabic: "مسك الطهارة",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 1500,
+                arabicprice: 'روبية هندية : -/١٥٠٠'
+            },
+            {
+                image: "images/100mlp/oudi p 100 ml.jpeg",
+                title: "OUDI",
+                arabic: "أودي",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/real x x p 100ml.jpeg",
+                title: "REAL X X",
+                arabic: "الريال اكسس اكسس",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/shahzeen p 100 ml.jpeg",
+                title: "SHAHZEEN",
+                arabic: "شاهزين",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/shay oud 100 ml.jpeg",
+                title: "SHAY OUD",
+                arabic: "شاي عود",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/silver mountain p 100 ml.jpeg",
+                title: "SILVER MOUNTAIN",
+                arabic: "جبل الفضة",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/soft p 100ml.jpeg",
+                title: "SOFT",
+                arabic: "سوفط",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/sugar baby 100 ml.jpeg",
+                title: "SUGAR BABY",
+                arabic: "سكر بابي",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/sultan p 100 ml.jpeg",
+                title: "SULTAN",
+                arabic: "سلطان",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/turkish oud p 100 ml.jpeg",
+                title: "TURKISH OUD",
+                arabic: "العود التركي",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/zamzam p100ml.jpeg",
+                title: "ZAM ZAM",
+                arabic: "زمزم",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 800,
+                arabicprice: 'روبية هندية : -/٨٠٠'
+            },
+            {
+                image: "images/100mlp/ziarat blue p 100ml.jpeg",
+                title: "ZIARAT BLUE",
+                arabic: "زيارة بلو",
+                description: "PREMIUM SERIES ATTAR 100 ML",
+                arabicdes: "سلسلة بريميوم عطار ١٠٠ مل",
+                category: "attars",
+                subCategory: "100mlp",  // This property represents the subcategory
+                price: 1000,
+                arabicprice: 'روبية هندية : -/١٠٠٠'
+            },
+            {
+                image: "images/500gms/m.bilal 500ml.jpeg",
+                title: "MUKHALLAT BILAL",
+                arabic: "زيارة بلو",
+                description: "ATTAR 500 ML",
+                arabicdes: "عطار ٥٠٠ مل",
+                category: "attars",
+                subCategory: "500gms",  // This property represents the subcategory
+                price: 5000,
+                arabicprice: 'روبية هندية : -/٥٠٠٠'
+            },
+            {
+                image: "images/500gms/musk razali 500ml.jpeg",
+                title: "MUSK RAZALI",
+                arabic: "مسك رزالي",
+                description: "ATTAR 500 ML",
+                arabicdes: "عطار ٥٠٠ مل",
+                category: "attars",
+                subCategory: "500gms",  // This property represents the subcategory
+                price: 6500,
+                arabicprice: 'روبية هندية : -/٦٥٠٠'
+            },
+        ];
+
+        const productsPerPage = 6;
+        let filteredProducts = [...products];
+        let currentPage = 1;
+
+        function generateProductGrid() {
+            const productGrid = document.getElementById('productGrid');
+            const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
+            const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
+
+            // Filter products based on the price range
+            const priceFilteredProducts = filteredProducts.filter(product => product.price >= minPrice && product.price <= maxPrice);
+
+            let productCards = '';
+
+            const startIndex = (currentPage - 1) * productsPerPage;
+            const endIndex = startIndex + productsPerPage;
+
+            for (let i = startIndex; i < endIndex && i < priceFilteredProducts.length; i++) {
+                const product = priceFilteredProducts[i];
+
+                const card = `
+                <div class="col-md-6 col-lg-4">
+                    <div class="card my-2 product product-card-body">
+                        <img src="${product.image}" class="card-img-top perfumes-img" alt="Product Image">
+                        <div class="card-body row">
+                            <h5 class="card-title product-card-title"><b>${product.title} <br> <span class="product-card-title-arabic"> ${product.arabic}</b></span></h5>
+                            <p class="card-text des-text m-0">${product.description} <br> <span class="des-arabic"> ${product.arabicdes} </span></p>
+                            <p class="card-text price-text">₹${product.price}<br> <span class="des-arabic arabic-price-text">${product.arabicprice}</span></p>
+                            <button class="btn buy-btn btn-outline text-align-bottom text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="setProductName('${product.title}')">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+
+        `
+                productCards += card;
+            }
+
+            productGrid.innerHTML = productCards;
+
+            const currentPageElement = document.getElementById('currentPage');
+            currentPageElement.textContent = `Page ${currentPage}`;
+        }
+        function applyFilters() {
+            currentPage = 1;
+            generateProductGrid();
+        }
+
+        function resetFilters() {
+            filteredProducts = [...products];
+            document.getElementById('minPrice').value = '';
+            document.getElementById('maxPrice').value = '';
+            currentPage = 1;
+            generateProductGrid();
+        }
+
+
+        function buyProduct(productName) {
+            const name = document.getElementById('floatingInput').value;
+            const address = document.getElementById('floatingTextarea').value;
+            const email = document.getElementById('floatingInputemail').value;
+            const mobileNumber = document.getElementById('mobilenumber').value;
+            const qty = document.getElementById('floatingInputqty').value;
+
+
+
+
+            const phoneNumber = '8850918911';
+            const message = `I want to buy this product 
+            Product: ${productName}
+            Name: ${name} 
+            Address: ${address}
+            Email: ${email}
+            Mobile Number: ${mobileNumber}
+            Quantity: ${qty}`;
+
+            const whatsappLink = `https://wa.me/+918850918911?text=${encodeURIComponent(message)}`;
+            window.open(whatsappLink, '_blank');
+
+            // const dataToStore = `${productName},${name},${address},${email},${mobileNumber},${qty}\n`;
+
+            // // Create a Blob with the CSV data
+            // const blob = new Blob([dataToStore], { type: 'text/csv;charset=utf-8;' });
+
+            // // Create a download link
+            // const link = document.createElement('a');
+            // const fileName = 'purchase_data.csv';
+            // link.href = URL.createObjectURL(blob);
+            // link.download = fileName;
+
+            // // Append the link to the body and trigger a click to download the file
+            // document.body.appendChild(link);
+            // link.click();
+
+            // // Remove the link from the body
+            // document.body.removeChild(link);
+        }
+
+
+
+
+        function setProductName(productName) {
+            const productNameInput = document.getElementById('productName');
+            productNameInput.value = productName;
+        }
+
+
+        function previousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                generateProductGrid();
+            }
+        }
+
+        function nextPage() {
+            const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                generateProductGrid();
+            }
+        }
+
+        // Generate initial product grid
+        generateProductGrid();
+    </script>
+    <script>
+        function highlightTab(tab) {
+            // Remove 'active-tab' class from all tabs
+            document.querySelectorAll('.nav-link').forEach(function (el) {
+                el.classList.remove('active-tab');
+            });
+
+            // Add 'active-tab' class to the clicked tab
+            tab.classList.add('active-tab');
+        }
+
+        // Set initial highlighting based on the current page
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentPath = window.location.pathname;
+
+            // Find the corresponding nav link and highlight it
+            document.querySelectorAll('.nav-link').forEach(function (el) {
+                if (el.getAttribute('href') === currentPath) {
+                    el.classList.add('active-tab');
+                }
+            });
+        });
+    </script>
+    <script>
+        function toggleActive(element, iconName) {
+            const navbarItems = document.querySelectorAll('.nav-item');
+            navbarItems.forEach(item => item.classList.remove('active'));
+
+            const clickedItem = document.querySelector(`.${iconName}`);
+            clickedItem.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>

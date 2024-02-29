@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "ChocolateBoxDecorative Regular";
+    src: local("ChocolateBoxDecorative Regular"), url("fonts/C_BOX_D.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Al-Battar';
+    src: url('fonts/AL-Battar.ttf') format('ttf'),
+         /* url('path/to/your/font.woff') format('woff'); */
+    /* Add more formats if needed */
+}
+
+  
+  @font-face {
+    font-family: 'Trajan Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trajan Pro Regular'), url('fonts/TrajanPro-Regular.woff') format('woff');
+  }
+
+.catogries {
+    padding: 20px;
+    font-family: 'Trajan Pro Regular';
+
+  }
+
+  .filter {
+    padding: 20px;
+    /* font-family: 'Trajan Pro Regular'; */
+
+  }
+  
+  
+  .title-cat {
+    margin-bottom: 10px;
+    font-family: fantasy;
+
+  }
+
+  .title-filter{
+    font-family: fantasy;
+    border-bottom: 1px solid grey;
+  }
+  
+  .catog-list li,.catog-list-a {
+    color: black; /* Initial text color */
+    cursor: pointer;
+    margin-bottom: 5px;
+   list-style: none;
+  }
+  
+  .catog-list li:hover {
+    color: blue; /* Text color on hover */
+  }
+  
+  .catog-list li.clicked {
+    color: red; /* Text color on click */
+  }
+
+  .perfumes-img{
+    height: 40vh;
+    border: 3px solid rgb(250, 170, 21);
+    border-top-right-radius: 139px;
+    border-bottom-left-radius: 139px;
+
+  }
+
+  .product-card-body{
+    border: 3px solid rgb(253, 195, 19);
+    border-top-right-radius: 140px;
+}
+
+
+  .product-card-title{
+    font-family: "ChocolateBoxDecorative Regular";
+    font-style: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #5200ae;
+  }
+
+  .product-card-title-arabic{
+    font-family: Al-Battar;
+    text-align: center;
+    font-size: 30px;
+    color: #a200ff;
+
+  }
+
+  .arabic-price-text,.des-arabic{
+    /* font-family: Al-Battar; */
+    font-size: 26px;
+    text-align: center;
+    color: #006158;
+    font-weight: 600;
+
+  }
+
+  .price-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    color: #00649c;
+  }
+
+.des-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight:500;
+  color: #00649c;
+}
+
+  .card{
+    height: 87vh;
+    background: linear-gradient(-45deg, #aafff4, #f0ffb4, #abd2ff, #adf5ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  .card:hover{
+    box-shadow: 0 0 15px rgb(179, 0, 255); 
+    border: 3px solid rgb(255, 200, 0);
+  }
+
+  .perfumes-img:hover{
+    box-shadow: 0 0 15px rgb(179, 0, 255); 
+    border: 3px solid rgb(255, 200, 0);
+  }
+
+  
+.buy-btn{
+  border: 3px solid rgb(255, 169, 40);
+  border-bottom-left-radius: 140px;
+  margin-left: 26px;
+  border-top-right-radius: 140px;
+  /* margin-right: 20px; */
+  width: 209px;
+  background: linear-gradient(-45deg, #abd2ff74, #adf5ff6f);
+  backdrop-filter: blur(10px);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  
+}
+
+
+  @media (max-width: 768px) {
+
+    @font-face {
+      font-family: 'Al-Battar';
+      src: url('fonts/AL-Battar.ttf') format('ttf'),
+           
+  }
+
+  .buy-btn {
+    border-bottom-left-radius: 140px;
+    margin-left: 26px;
+    border-top-right-radius: 140px;
+    /* margin-right: 20px; */
+    width: 310px;}
+
+  .des-text{
+    font-size: 25px;
+  }
+
+  .des-arabic{
+    font-size:30px;
+  }
+
+  .price-text{
+    font-size: 30px;
+  }
+
+
+
+.catogries {
+      padding: 10px;
+    }
+    
+.title-cat {
+      font-size: 18px;
+    }
+
+.title-cat{
+      text-align: center;
+      font-size: 30px;
+    }
+
+.catog-list{
+      text-align: center;
+      padding: 0px;
+    }
+.title-filter{
+      text-align: center;
+    }
+
+.product-card-title-arabic{
+      font-family: Al-Battar;
+      text-align: center;
+      font-size: 30px;
+    }
+  
+.arabic-price-text{
+      /* font-family: Al-Battar; */
+      font-size: 30px;
+      text-align: center;
+    }
+
+.product-card-title{
+      font-size: 25px;
+    }
+
+.product-card-title-arabic{
+      font-size: 35px;
+    }
+  }
